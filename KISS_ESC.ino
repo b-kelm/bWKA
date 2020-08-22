@@ -5,7 +5,7 @@
 #define ESCPID_USB_UART_SPEED 115200  //シリアル通信の速度
 #define ESCPID_NB_ESC 1               //ESCの数
 
-const float LOGGING_CYCLE = 0.01;     //制御周期[s]
+const float LOGGING_CYCLE = 0.01;     //ログ周期[s]
 
 IntervalTimer Timer;                  //10msの割り込み
 
