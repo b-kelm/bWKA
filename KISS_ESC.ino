@@ -2,14 +2,14 @@
 #include "DSHOT.h"
 #include "ESCCMD.h"
 
-#define ESCPID_USB_UART_SPEED 115200  //シリアル通信の速度
-#define ESCPID_NB_ESC 1               //ESCの数
+#define ESCPID_USB_UART_SPEED 115200  // Uart Speed
+#define ESCPID_NB_ESC 1               // No. of ESCs (here 1)
 
-const float LOGGING_CYCLE = 0.01;     //ログ周期[s]
+const float LOGGING_CYCLE = 0.01;     // Logging cycle (probably not needed)[s]
 
-IntervalTimer Timer;                  //10msの割り込み
+IntervalTimer Timer;                  //10ms Interval Timer to update the ESC command
 
-int16_t Dshot_val = 0;                      // dshot_cmd_value 指令値を格納する変数
+int16_t Dshot_val = 0;                      // dshot_cmd value
 
 // PWM Servo Tester
 volatile int pwm_value = 0;

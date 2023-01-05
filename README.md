@@ -30,8 +30,10 @@ Environment: [Teensyduino](https://www.pjrc.com/teensy/td_download.html)
 ### Wiring:
 
 ESC is wired up normally to Battery and Motor
-TLM Pad (or TX) on the ESC is wired to the Teensy on *Pin XY*.
-The Servo Tester is wired to the Teensy on *Pin 14*
+KISS ESC 32A is wired to the Teensy in the following way:
+- ESC TLM Pad (or TX) <-> Teensy *Pin 0*
+- ESC SIG Pad  <-> Teensy *Pin 4*
+The Servo Tester PWM Signal is wired to the Teensy on *Pin 14*
 
 ## Program Description
 The program is heavily relying on these two sources:
